@@ -10,14 +10,15 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.target>1.7</maven.compiler.target>
-    <version.furnace>2.13.0-SNAPSHOT</version.furnace>
+    <version.forge>2.15.2.Final</version.forge>
+    <version.furnace>2.15.3.Final</version.furnace>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.jboss.forge</groupId>
         <artifactId>forge-bom</artifactId>
-        <version>${version.furnace}</version>
+        <version>${version.forge}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -102,7 +103,7 @@
             <configuration>
               <addonRepository>${project.build.directory}/${project.artifactId}/WEB-INF/addon-repository</addonRepository>
               <addonIds>
-                <addonId>org.jboss.forge.addon:core,${version.furnace}</addonId>
+                <addonId>org.jboss.forge.addon:core,${version.forge}</addonId>
               </addonIds>
             </configuration>
           </execution>
